@@ -1,14 +1,16 @@
+#Notes:
 # list_name.sort() sorts the list from  low to high
 # list_name.sort(reverse = True) sorts the list from high to low
 # list_name.append(#) appends to the end of the list
-# If you dont know how many keywords to pass into your function use **kwargs in the 
-#  parameter of your function.
-# If you dont know how many arguments will be passed into the parameter of a function
-#   you can use * before the parameter name. This will will pass in a tuple.
 #
-# -I figugred out why I could not return the last value of my list. I was making a var
+# If you dont know how many keywords to pass into your function use **kwargs in the 
+# parameter of your function.
+# If you dont know how many arguments will be passed into the parameter of a function
+# you can use * before the parameter name. This will will pass in a tuple.
+#
+# -I figured out why I could not return the last value of my list. I was making a var
 #        latest_score = [scores] what that was doing was creating a new list called
-#        latest_score and putting the score list in that list. Making a list and puttin
+#        latest_score and putting the score list in that list. Making a list and putting
 #        a list inside a list!
 #
 
