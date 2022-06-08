@@ -1,10 +1,7 @@
 # exercism.io
 
+These are the exercism.io coding challenges. Coding challenges are a
+fun way to test your skills, learn syntax, and get some practice in.
 
-These are the exercism.io coding challenges in python and ruby I have been
-doing. Coding challenges are a fun way to test your skills and get some practice 
-in.
-
-Take a look here https://exercism.io/  for some fun coding challenges.
-
-Enjoy!
+Take a look here [https://exercism.io/](https://exercism.io/) for some
+fun coding challenges.
