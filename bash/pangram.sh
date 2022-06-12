@@ -2,35 +2,24 @@
 
 is_pangram () {
 
-  pangram=true
+  # create bool var to track if string is pangram
+  pangram="true"
+
+  # remove punctuation
   words="${1//[[:punct:]]/}"
+
+  # lowercase all letters
   words="${words,,}"
 
-   for char in {a..z}; do
-     [[ "$words" =~  $char ]] && continue || pangram=false && break
-     #[[ "$1" =~  $char ]] && continue || pangram=false && break
-     #echo "$char"
-   done
+  # iterate alphabet, check if words contains the letter
+  # if so continue to next iteration
+  # if not set pangram to false and break out of loop
+  for char in {a..z}; do
+    [[ "$words" =~  $char ]] && continue || pangram="false" && break
+  done
 
+  # echo results
   echo "$pangram"
-#    pangram=true
-#
-#   words="${1//[[:punct:]]/}"
-#   words="${words,,}"
-#   #echo "$words"
-#    for char in {a..z}; do
-#      if [[ "${words}" =~ "$char" ]]; then
-#        continue
-#         #echo "${char} is in the string"
-#      else
-#        #echo "${char} is not in string"
-#        pangram=false
-#        break
-#      fi
-#     # echo "$char"
-#    done
-#  echo "$pangram"
-
 }
 
 is_pangram "$@"
